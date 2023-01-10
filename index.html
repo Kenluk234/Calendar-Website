@@ -1,94 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Calendar </title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <title> Calendar2 </title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
-      <!-- Start modal section -->
-      <div class="signup-modal-wrapper" id="interest-modal">
-        <div class="modal">
-          <div>
-            <i class="fa fa-2x fa-times" id="close-modal"></i>
-          </div>
-          <div id="signup-form">
-            <h2>Pick your interest</h2>
-            <form action="#">
-              <div id="container1" class="small-container">Gaming</div>
-              <div id="container2" class="small-container">Economy</div>
-              <div id="container3" class="small-container">Tech</div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- End of modal section -->
-      <div class="column">
-        <div class="container">
-            <div class="calendar light">
-              <div class="calendar_header">
-                <h1 class = "header_title">Welcome Back</h1>
-                <p class="header_copy"> Calendar Plan</p>
-              </div>
-              <div class="calendar_plan">
-                <div class="cl_plan">
-                  <div class="cl_title">Today</div>
-                  <div class="cl_copy" id="current_date">: </div>
-                  <div>
-                    <form action="fullcalendar/calendar.html">
-                      <button type="submit" class="cl_add"></button>
-                    </form>
-                  </div>
+      
+        <div class="wrapper">
+            <main>
+              <div class="toolbar">
+                <div class="toggle">
+                  
+                  <button class="toggle_option" id="week">week</button>
+                  <button class="toggle_option" id="month">month</button>
+                </div>
+                <div class="current-month">December 2022</div>
+                <div class="search-input">
+                  <input type="text" value="What are you looking for?">
+                  <i class="fa fa-search"></i>
                 </div>
               </div>
-              <div class="calendar_events">
-                <p class="ce_title">Upcoming Events</p>
-                <div class="event_item">
-                  <div class="ei_Dot dot_active"></div>
-                  <div class="ei_Title">10:30 am</div>
-                  <div class="ei_Copy">Monday briefing with the team</div>
+              <div class="calendar">
+                <div class="calendar_header">
+                  <div>mon</div>
+                  <div>tue</div>
+                  <div>wed</div>
+                  <div>thu</div>
+                  <div>fri</div>
+                  <div>sat</div>
+                  <div>sun</div>
                 </div>
-                <div class="event_item">
-                  <div class="ei_Dot"></div>
-                  <div class="ei_Title">12:00 pm</div>
-                  <div class="ei_Copy">Lunch for with the besties</div>
+                <div class="calendar_week">
+                  <div class="calendar_day day">1</div>
+                  <div class="calendar_day day">2</div>
+                  <div class="calendar_day day">3</div>
+                  <div class="calendar_day day">4</div>
+                  <div class="calendar_day day">5</div>
+                  <div class="calendar_day day">6</div>
+                  <div class="calendar_day day">7</div>
                 </div>
-                <div class="event_item">
-                  <div class="ei_Dot"></div>
-                  <div class="ei_Title">13:00 pm</div>
-                  <div class="ei_Copy">Meet with the client for final design <br> @foofinder</div>
+                <div class="calendar_week">
+                  <div class="calendar_day day">8</div>
+                  <div class="calendar_day day">9</div>
+                  <div class="calendar_day day">10</div>
+                  <div class="calendar_day day">11</div>
+                  <div class="calendar_day day">12</div>
+                  <div class="calendar_day day">13</div>
+                  <div class="calendar_day day">14</div>
                 </div>
-                <div class="event_item">
-                  <div class="ei_Dot"></div>
-                  <div class="ei_Title">14:30 am</div>
-                  <div class="ei_Copy">Plan event night to inspire students</div>
+                <div class="calendar_week">
+                  <div class="calendar_day day">15</div>
+                  <div class="calendar_day day">16</div>
+                  <div class="calendar_day day">17</div>
+                  <div class="calendar_day day">18</div>
+                  <div class="calendar_day day">19</div>
+                  <div class="calendar_day day">20</div>
+                  <div class="calendar_day day">21</div>
                 </div>
-                <div class="event_item">
-                  <div class="ei_Dot"></div>
-                  <div class="ei_Title">15:30 am</div>
-                  <div class="ei_Copy">Add some more events to the calendar</div>
+                <div class="calendar_week">
+                  <div class="calendar_day day">22</div>
+                  <div class="calendar_day day">23</div>
+                  <div class="calendar_day day">24</div>
+                  <div class="calendar_day day">25</div>
+                  <div class="calendar_day day">26</div>
+                  <div class="calendar_day day">27</div>
+                  <div class="calendar_day day">28</div>
+                </div>
+                <div class="calendar_week">
+                  <div class="calendar_day day">29</div>
+                  <div class="calendar_day day">30</div>
+                  <div class="calendar_day day">31</div>
+                  <div class="calendar_day day">1</div>
+                  <div class="calendar_day day">2</div>
+                  <div class="calendar_day day">3</div>
+                  <div class="calendar_day day">4</div>
                 </div>
               </div>
-          </div>
-        </div>
-      </div>
-        <div id="game-article1" class="box">
-          <h1>The Biggest Gaming News For January 7, 2023</h1>
-          <h4></h4>
-        </div>
-        <div id="game-article2" class="box">
-          <h1>Why this CS:GO AK-47 skin will sell for over $400,000</h1>
-          <h4></h4>
-        </div>
-        <div class="box">
-          <h1>Article Tittle</h1>
-          <h4>Article description</h4>
-        </div>
-      </div>
-        
-         
-    <script src="time.js" ></script>
-    <script src="modal.js"></script>
+                
+            </main>
     </body>
 </html>
