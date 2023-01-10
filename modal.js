@@ -3,11 +3,7 @@ var gamers = $('#game-article1');
 var gamer = $('#game-article2');
 $('.box').hide();
 
-$('#cl_add').click(function() {
-  modal-content.show(1000);
-})
 
-$
 $('#container1').click(function() {
     modal.hide(1000);
     gamers.show(1000);
